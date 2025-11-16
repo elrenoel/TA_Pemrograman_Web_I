@@ -1,0 +1,79 @@
+.hero {
+  min-height: calc(100vh - 89.9062px);
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* align-items: center; */
+  flex: 2;
+}
+
+.div1 img {
+  width: 80px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.div2 h2 {
+  font-family: "Roboto",sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 3;
+  margin-top: 5px;
+}
+
+.div3 p {
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.4);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;     /* jarak icon dan teks */
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-icon:hover {
+  color: black;
+  background: white;
+}
+
+.btn-icon:hover img {
+  content: url(images/majesticons_arrow-up-line.png);
+}
+
+.btn-icon img {
+  width: 20px;
+  object-fit: contain;
+}
+
+
