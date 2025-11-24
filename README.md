@@ -1,8 +1,4 @@
 # README_PW1
-Saving Only ReadMe
-
-
-Berikut **README** yang sudah dibuat **mirip dengan contoh**, namun **disesuaikan** dengan proyek *Swavy* milikmu. Struktur, gaya penulisan, dan format sudah dibuat profesional dan to the point sesuai permintaan.
 
 ---
 
@@ -93,6 +89,3 @@ Proyek ini menggunakan lisensi MIT. Lihat file **LICENSE** (jika tersedia) untuk
 ✨ **Terima kasih telah mengunjungi Swavy!**
 Bangun komunitas musik yang lebih hidup bersama kami.
 
----
-
-Kalau mau, aku bisa buat **versi README dengan gambar**, **badge GitHub**, atau **tabel fitur** biar makin profesional.
