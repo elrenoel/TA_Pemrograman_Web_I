@@ -1,0 +1,563 @@
+.music {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 1024px;
+    position: relative;
+}
+
+.music .frame {
+    gap: 382px;
+    position: absolute;
+    top: 62px;
+    left: calc(50.00% - 601px);
+    display: inline-flex;
+    align-items: center;
+}
+
+.music .div {
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.music .asset {
+    position: relative;
+    width: 27px;
+    height: 31px;
+    overflow: hidden;
+    aspect-ratio: 0.87;
+}
+
+.music .layer {
+    width: 27px;
+    height: 31px;
+    display: flex;
+}
+
+.music .group {
+    flex: 1;
+    width: 27px;
+    position: relative;
+}
+
+.music .vector {
+    top: 0;
+    position: absolute;
+    width: 100.00%;
+    height: 61.00%;
+    left: 0;
+}
+
+.music .img {
+    top: 39.00%;
+    position: absolute;
+    width: 100.00%;
+    height: 61.00%;
+    left: 0;
+}
+
+.music .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .frame-2 {
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.music .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .frame-3 {
+    justify-content: center;
+    gap: 7px;
+    padding: 5px 0px;
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.music .mask-group {
+    position: relative;
+    width: 41px;
+    height: 41px;
+    aspect-ratio: 1;
+}
+
+.music .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .fe-arrow-up {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    aspect-ratio: 1;
+}
+
+.music .group-wrapper {
+    position: absolute;
+    top: 181px;
+    left: 120px;
+    width: 585px;
+    height: 202px;
+    display: flex;
+    background-color: #d9d9d95c;
+    border-radius: 16px;
+}
+
+.music .group-2 {
+    margin-top: 36px;
+    width: 521px;
+    height: 130px;
+    margin-left: 34px;
+    position: relative;
+}
+
+.music .mask-group-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    aspect-ratio: 1;
+}
+
+.music .p {
+    position: absolute;
+    top: 50px;
+    left: 169px;
+    width: 348px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .div-2 {
+    top: 0;
+    left: 169px;
+    font-size: 20px;
+    position: absolute;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .span {
+    font-weight: 700;
+}
+
+.music .text-wrapper-4 {
+    font-family: "Roboto-Regular", Helvetica;
+}
+
+.music .text-wrapper-5 {
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 16px;
+}
+
+.music .div-wrapper {
+    position: absolute;
+    top: 408px;
+    left: 120px;
+    width: 585px;
+    height: 202px;
+    display: flex;
+    background-color: #d9d9d95c;
+    border-radius: 16px;
+}
+
+.music .group-3 {
+    position: absolute;
+    top: 635px;
+    left: 120px;
+    width: 585px;
+    height: 202px;
+    display: flex;
+    background-color: #d9d9d95c;
+    border-radius: 16px;
+}
+
+.music .group-4 {
+    margin-top: 36px;
+    width: 352px;
+    height: 126px;
+    margin-left: 203px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.music .element-charliexcx {
+    width: 80px;
+    height: 42px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .text-wrapper-6 {
+    width: 348px;
+    height: 76px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .group-5 {
+    position: absolute;
+    top: 862px;
+    left: 120px;
+    width: 585px;
+    height: 202px;
+    display: flex;
+    background-color: #d9d9d95c;
+    border-radius: 16px;
+}
+
+.music .i-miss-u-gracie {
+    width: 115px;
+    height: 42px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .mask-group-3 {
+    position: absolute;
+    top: 549px;
+    left: 1170px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-4 {
+    position: absolute;
+    top: 671px;
+    left: 154px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-5 {
+    position: absolute;
+    top: 549px;
+    left: 1011px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-6 {
+    position: absolute;
+    top: 549px;
+    left: 852px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-7 {
+    position: absolute;
+    top: 365px;
+    left: 852px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-8 {
+    position: absolute;
+    top: 365px;
+    left: 1170px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-9 {
+    position: absolute;
+    top: 898px;
+    left: 154px;
+    width: 130px;
+    height: 126px;
+}
+
+.music .mask-group-10 {
+    position: absolute;
+    top: 365px;
+    left: 1011px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-11 {
+    position: absolute;
+    top: 444px;
+    left: 154px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-12 {
+    position: absolute;
+    top: 181px;
+    left: 852px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-13 {
+    position: absolute;
+    top: 181px;
+    left: 1170px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .mask-group-14 {
+    position: absolute;
+    top: 181px;
+    left: 1011px;
+    width: 130px;
+    height: 130px;
+}
+
+.music .text-wrapper-7 {
+    position: absolute;
+    top: 144px;
+    left: 120px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .text-wrapper-8 {
+    position: absolute;
+    top: 144px;
+    left: 852px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .text-wrapper-9 {
+    position: absolute;
+    top: 752px;
+    left: 852px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.music .valentine-laufey {
+    position: absolute;
+    top: 316px;
+    left: 854px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .text-wrapper-10 {
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 13px;
+}
+
+.music .passionfruit-drake {
+    position: absolute;
+    top: 500px;
+    left: 854px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .snow-in-the-beach {
+    top: 684px;
+    left: 854px;
+    font-size: 14px;
+    position: absolute;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .sad-girl-lana-del {
+    position: absolute;
+    top: 316px;
+    left: 1011px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .beaches-beabadoobee {
+    position: absolute;
+    top: 500px;
+    left: 1011px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .moon-river-frank {
+    top: 684px;
+    left: 1011px;
+    font-size: 14px;
+    position: absolute;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .juno-sofia {
+    position: absolute;
+    top: 316px;
+    left: 1170px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .i-miss-u-gracie-2 {
+    position: absolute;
+    top: 500px;
+    left: 1170px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .element-charlie-XCX {
+    position: absolute;
+    top: 684px;
+    left: 1170px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.music .mask-group-15 {
+    position: absolute;
+    top: 794px;
+    left: 851px;
+    width: 131px;
+    height: 125px;
+}
+
+.music .mask-group-16 {
+    position: absolute;
+    top: 794px;
+    left: 1011px;
+    width: 131px;
+    height: 125px;
+}
+
+.music .mask-group-17 {
+    position: absolute;
+    top: 794px;
+    left: 1169px;
+    width: 131px;
+    height: 125px;
+}
