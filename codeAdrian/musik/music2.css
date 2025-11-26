@@ -1,0 +1,91 @@
+.container {
+    padding: 20px 17%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 40px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main {
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  flex: 1;
+  margin-right: 9rem;
+  flex-direction: column;
+}
+.right-side {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.border-song {
+  margin-top: 2rem;
+}
+
+.colomn-song {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.song {
+  /* display: flex; */
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.size-img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.judul-song {
+  font-weight: 700;
+}
