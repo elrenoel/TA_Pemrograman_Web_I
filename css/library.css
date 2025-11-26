@@ -113,7 +113,8 @@
     border: none;
     background: #efefef;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .featured-news img {
@@ -130,4 +131,9 @@
 .featured-desc {
     font-size: 14px;
     opacity: 0.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
