@@ -68,7 +68,7 @@
 }
 
 .btn-icon:hover img {
-  content: url(images/majesticons_arrow-up-line.png);
+  content: url(../images/majesticons_arrow-up-line.png);
 }
 
 .btn-icon img {
