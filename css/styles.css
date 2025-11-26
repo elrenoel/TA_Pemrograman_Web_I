@@ -11,7 +11,9 @@
   scroll-behavior: smooth;
 }
 
-
+body {
+  background: url(../images/Mask\ group.png);
+}
 
 li, a {
   font-family: "Roboto",sans-serif;
