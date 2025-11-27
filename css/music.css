@@ -8,7 +8,10 @@
 .container {
     padding: 20px 17%;
     font-family: Arial, sans-serif;
+    /* overflow-y: auto; */
 }
+
+
 
 .header {
     display: flex;
@@ -56,13 +59,11 @@
 
 main {
   display: flex;
-  /* gap: 20px; */
 }
 
 .left-side {
   display: flex;
   flex: 1.4;
-  /* margin-right: 9rem; */
   flex-direction: column;
 }
 .right-side {
@@ -78,7 +79,6 @@ main {
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  /* width: 100%; */
   border-radius: 0.6rem;
 }
 
@@ -88,20 +88,24 @@ main {
   margin-left: 2rem;
 }
 
+/* .colomn-song::-webkit-scrollbar {
+  height: 0; 
+} */
+
 .song {
-  /* display: flex; */
   flex: 1;
   margin-right: 1rem;
-  /* margin: 0 1rem; */
 }
+
+
 
 .size-img {
   width: 6rem;
   height: 6rem;
   object-fit: cover;
   border-radius: 10px;
-  /* margin-bottom: 0.5rem; */
 }
+
 
 .size-img-bot {
   width: 6rem;
@@ -116,7 +120,6 @@ main {
   height: 6rem;
   object-fit: cover;
   border-radius: 10px;
-  /* margin-bottom: 0.5rem; */
 }
 
 .judul-song {
@@ -145,10 +148,6 @@ main {
   margin-top: 0.6rem;
 }
 
-/* .image-review {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 
 .text-opa {
   font-weight: 100;
@@ -178,4 +177,44 @@ main {
     padding: 24px 0;
     color: var(--muted);
     border-top: 1px solid rgba(0, 0, 0, 0.03)
+}
+
+.wrapper {
+  width: 20rem;
+  max-height: 120px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;     
+  overflow-y: hidden;   
+  white-space: nowrap;
+  margin-left: 2rem;
+  border-radius: 8px;
+}
+.wrapper .item {
+  min-width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center; 
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track {
+  display: flex;
+  gap: 1rem;
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-80%); }
 }
