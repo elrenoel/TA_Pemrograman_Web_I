@@ -6,7 +6,7 @@
     --radius: 16px;
 }
 .container {
-    padding: 20px 17%;
+    padding: 20px 10%;
     font-family: Arial, sans-serif;
     /* overflow-y: auto; */
 }
@@ -97,7 +97,7 @@ main {
   margin-right: 1rem;
 }
 
-
+/* Image review trus gambar dibuat 100%, kesalahanya music page tidak dibuat flex masing masing 1 */
 
 .size-img {
   width: 6rem;
