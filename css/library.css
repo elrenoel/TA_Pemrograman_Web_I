@@ -1,6 +1,23 @@
 .container {
-    padding: 20px 17%;
+    padding: 20px 13%;
     font-family: Arial, sans-serif;
+}
+
+.profile-nav img {
+    transition: 0.2s;
+}
+.profile-nav img:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.menu-mation {
+    transition: all 0.25s ease;
+}
+
+.menu-mation:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
 }
 
 .header {
@@ -115,6 +132,16 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
+}
+
+.button-motion {
+     transition: transform 0.25s ease,box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.button-motion:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background-color: #ffe8c6;
 }
 
 .featured-news img {
