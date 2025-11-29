@@ -1,5 +1,5 @@
 .hero {
-  min-height: calc(100vh - 89.9062px);
+  min-height: calc(100vh - 5.6191375rem);
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
 .btn-icon {
   display: flex;
   align-items: center;
-  gap: 8px;     /* jarak icon dan teks */
+  gap: 8px;    
   background: black;
   color: white;
   padding: 8px 16px;
