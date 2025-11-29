@@ -70,6 +70,13 @@ nav {
   width: 26px;
 }
 
+.profile-nav img {
+    transition: 0.2s;
+}
+.profile-nav img:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
 
 
 .nav__links {
@@ -89,7 +96,7 @@ nav {
 }
 
 .nav__links li a:hover {
-  color: cadetblue;
+  color: rgb(243, 247, 247);
 }
 
 .div__links {

@@ -12,6 +12,16 @@
     /* overflow-y: auto; */
 }
 
+.profile-nav img {
+    transition: 0.2s;
+}
+.profile-nav img:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -74,12 +84,20 @@ main {
 
 .border-song {
     margin-bottom: 1rem;
+    cursor: pointer;
     background: #D9D9D95C;
     padding: 1rem;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     border-radius: 0.6rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.border-song:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background-color: #D9D9D95C;
 }
 
 .colomn-song {
@@ -88,6 +106,24 @@ main {
     margin-left: 2rem;
 }
 
+.menu-mation {
+    transition: all 0.25s ease;
+}
+
+.menu-mation:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.swavy-motion {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+} 
+
+.swavy-motion:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background-color: #D9D9D95C;
+}
 
 /* .colomn-song::-webkit-scrollbar {
   height: 0; 
@@ -96,6 +132,14 @@ main {
 .song {
     flex: 1;
     margin-right: 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    cursor: pointer;
+}
+
+.song:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background-color: #D9D9D95C;
 }
 
 
