@@ -24,11 +24,13 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+  text-align: center;
 }
 
 .div2 h2 {
   font-family: "Roboto",sans-serif;
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: clamp(24px, 5vw, 48px);
   font-weight: 600;
 }
 
@@ -39,6 +41,7 @@
   align-items: center;
   flex: 3;
   margin-top: 5px;
+  text-align: center;
 }
 
 .div3 p {

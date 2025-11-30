@@ -67,6 +67,23 @@ a {
     border-radius: 50%;
 }
 
+.profile-nav img {
+    transition: 0.2s;
+}
+.profile-nav img:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.menu-mation {
+    transition: all 0.25s ease;
+}
+
+.menu-mation:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
 main {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -97,7 +114,6 @@ main {
 }
 
 .second-two-box {
-    /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +122,53 @@ main {
     padding-bottom: 1rem;
     margin-bottom: 2rem;
 }
+
+.img-popup {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-box {
+    font-family: "Roboto",sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    white-space: nowrap;
+}
+
+.popup-top {
+    bottom: calc(100% + 10px); 
+}
+
+.popup-top::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+}
+
+.img-popup:hover .popup-box {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-6px);
+}
+
+.img-popup:hover img {
+    filter: brightness(0.4);
+    transition: 0.2s ease;
+}
+
 
 /* .second-box-content {
     flex: 1;
@@ -139,8 +202,7 @@ main {
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
     gap: 1rem;
-    background: #A0A0A033;
-    
+    transition: background-color 0.25s ease; 
     align-items: center;
     border-radius: 0.3125rem;
 }
@@ -153,7 +215,28 @@ main {
     gap: 1rem;
     align-items: center;
     border-radius: 0.3125rem;
+    transition: background-color 0.25s ease; 
 }
+
+.content-option:hover {
+    background: #A0A0A033;
+}
+
+.content:hover {
+    background: #A0A0A033;
+}
+
+.bookmark-icon {
+    width: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.bookmark-icon:hover {
+    transform: scale(1.1);
+}
+
+
 
 .icon-size {
     width: 1.3rem;
@@ -244,6 +327,13 @@ hr {
     border: none;
     border-radius: 0.5rem;
     margin-right: 0.5rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(0.98);
+    background-color: #7d7b78;
 }
 
 .content-review {
