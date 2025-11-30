@@ -134,6 +134,11 @@ main {
     margin-right: 1rem;
     transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
 }
 
 .song:hover {
@@ -226,7 +231,8 @@ main {
 }
 
 .wrapper {
-    width: 20rem;
+    /* width: 20rem; */
+    width: clamp(20rem, 30vw, 40rem);
     max-height: 120px;
     display: flex;
     overflow: hidden;
@@ -235,6 +241,7 @@ main {
     white-space: nowrap;
     margin-left: 2rem;
     border-radius: 8px;
+    justify-content: center;
 }
 
 .wrapper .item {
@@ -261,34 +268,59 @@ main {
     animation: slide 5s linear infinite;
 }
 
+/* .box-motion::-webkit-scrollbar {
+    width: 0;
+} */
+
+/* .box-motion { */
+    /* width: 21rem;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 2rem;
+    display: flex; */
+    /* gap: 1rem; */
+    /* justify-content: center; */
+    /* max-width: 100%; */
+    /* background-color: yellow; */
+/* } */
+
+/* .box-again {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    margin-right: 1rem;
+    animation: slide 5s linear infinite;
+} */
+
 @keyframes slide {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-80%);
+        transform: translateX(-45%);
     }
 }
 
 @media (max-width: 900px) {
-    .header {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: start;
-    }
-
     .menu {
-        gap: 15px;
-        font-size: 14px;
-    }
-
-    .profile {
-        margin-left: auto;
+        display: none;
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     main {
         flex-direction: column;
+    }
+
+    .gap-judul {
+        display: flex;
+        justify-content: center;
+    }
+    .gap-judul-bot {
+        display: flex;
+        justify-content: center;
     }
 
     .left-side,
@@ -303,6 +335,7 @@ main {
 
     .wrapper {
         margin-left: 0;
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
@@ -338,10 +371,19 @@ main {
 }
 @media (max-width: 600px) {
     .colomn-song {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: start;
         gap: 1rem;
         margin-left: 0;
+    }
+
+    .gap-judul {
+        display: flex;
+        justify-content: center;
+    }
+    .gap-judul-bot {
+        display: flex;
+        justify-content: center;
     }
 
     .song {
@@ -349,12 +391,12 @@ main {
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 0.3rem;
     }
 
     .song h2,
     .song p {
-        margin-top: 0.1rem;
+        margin-top: 0rem;
     }
 }
 @media (max-width: 600px) {
@@ -386,3 +428,9 @@ main {
         height: 80px;
     }
 }
+
+/* @media (min-width :2000px) {
+    .wrapper {
+        width: 35rem;
+    }
+} */
