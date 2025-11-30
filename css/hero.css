@@ -46,7 +46,8 @@
 
 .div3 p {
   font-family: "Roboto",sans-serif;
-  font-size: 20px;
+  font-size: clamp(0.625rem,5vw,1.25rem) ;
+  /* font-size: 20px; */
   font-weight: 400;
   color: rgba(0,0,0,0.4);
 }
@@ -54,14 +55,14 @@
 .btn-icon {
   display: flex;
   align-items: center;
-  gap: 8px;    
+  gap: 0.5rem;    
   background: black;
   color: white;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
   transition: all 0.3s ease 0s;
 }
 
@@ -77,6 +78,15 @@
 .btn-icon img {
   width: 20px;
   object-fit: contain;
+}
+
+.btn-icon:active {
+  background: white;
+  color: black;
+}
+
+.btn-icon:active img {
+  content: url(../images/majesticons_arrow-up-line.png);
 }
 
 
