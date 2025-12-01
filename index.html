@@ -83,11 +83,20 @@
     </div>
   </section>
   <script>
-    const hamburger = document.querySelector(".hamburger");
-    const mobileMenu = document.querySelector(".mobile-menu");
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-menu");
 
-    hamburger.addEventListener("click", () => {
-      mobileMenu.classList.toggle("show");
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+      });
+
+      document.addEventListener("click", (e) => {
+      const klikHamburger = hamburger.contains(e.target);
+      const klikMenu = mobileMenu.contains(e.target);
+
+      if (!klikHamburger && !klikMenu) {
+        mobileMenu.classList.remove("show");
+      }
     });
   </script>
 

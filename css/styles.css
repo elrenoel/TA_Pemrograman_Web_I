@@ -160,9 +160,7 @@ nav {
   color: white;
 }
 
-/* .div__links li a.btn-header:hover {
-  background-color: lightblue;
-} */
+
 
 .div-icon {
   width: 22px;    
@@ -198,11 +196,9 @@ nav {
   gap: 1rem;
   z-index: 10;
   border-bottom: 1px solid #ddd;
-  /* border-radius: 1rem; */
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 
-  /* margin-left: 10rem; */
   
   opacity: 0;
   transform: translateY(-20px);
