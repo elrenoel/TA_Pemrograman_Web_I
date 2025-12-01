@@ -9,6 +9,34 @@
 </head>
 <body>
   <header>
+    <div class="mobile-menu">
+      <a href="pages/home.html">Home</a>
+      <a href="pages/explore.html">Explore</a>
+      <a href="pages/news.html">News</a>
+
+      <hr>
+      <div class="menu-flex">
+        <img class="div-icon" src="images/insta.png" alt="">
+        <a href="https://www.instagram.com/cosmchair?igsh=M3JsNzVrdHQwNTI0">Instagram</a>
+      </div>
+      <div class="menu-flex">
+        <img class="div-icon" src="images/logos--tiktok-icon.png" alt="">
+        <a href="https://www.tiktok.com/">Tiktok</a>
+      </div>
+      <div class="menu-flex">
+        <img class="div-icon" src="images/spotify.png" alt="">
+        <a href="https://www.tiktok.com/">Spotify</a>
+      </div>
+      <div class="overlay-log">
+        <div class="log">
+          <a href="#">Log In</a>
+        </div>
+        <div class="log">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
     <div class="left-nav">
       <a class="logo-header" href="index.html">
         <img class="logo" src="images/swavylogo.png" alt="">
@@ -54,15 +82,15 @@
       <p>write honest reviews, and show off your unique musik taste</p>
     </div>
   </section>
-  <!-- <script>
-  const burger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
 
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  });
-</script> -->
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
+
 
 </body>
 </html>
