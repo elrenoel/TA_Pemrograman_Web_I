@@ -107,7 +107,7 @@ a {
 
 .section-title {
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.2rem;
 }
 
@@ -124,7 +124,7 @@ a {
 
 .second-title {
     margin-bottom: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.2rem;
 }
 
@@ -204,10 +204,13 @@ a {
 
     .album-box {
         width: 100%;
+        
+
     }
 
     .size-img {
         height: 12rem;
+        object-fit: cover;
     }
 }
 
@@ -227,6 +230,7 @@ a {
 
     .second-box {
         flex: 1 1 calc(50% - 1rem);
+        object-fit: 
     }
 
     .second-img {
