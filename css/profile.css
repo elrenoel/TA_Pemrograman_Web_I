@@ -16,10 +16,7 @@ a {
 
 
 .container {
-    /* padding: 20px 10%; */
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1.2rem;
+    padding: 1.2rem 10% 0;
     font-family: Arial, sans-serif;
 }
 

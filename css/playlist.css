@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-    padding: 20px 13%;
+    padding: 20px 10%;
     font-family: Arial, sans-serif;
 }
 
@@ -230,10 +230,6 @@ a {
 
     .second-box {
         flex: 1 1 calc(50% - 1rem);
-<<<<<<< HEAD
-        object-fit: false; 
-=======
->>>>>>> 7e39965400a62e061d19944bd306e22c44d775bf
     }
 
     .second-img {
