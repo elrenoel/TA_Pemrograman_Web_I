@@ -65,6 +65,14 @@
       </ul>
     </div>
   </header>
+  <div class="login-overlay" id="loginOverlay">
+    <div class="login-box">
+      <h2>Login</h2>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </div>
   <section class="hero">
     <div class="div1">
       <img src="images/swavylogo.png" alt="">
@@ -98,6 +106,22 @@
         mobileMenu.classList.remove("show");
       }
     });
+
+    const loginOverlay = document.getElementById("loginOverlay");
+const loginBtn = document.querySelector(".btn-black");
+
+loginBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  loginOverlay.classList.add("show");
+});
+
+// klik luar modal → tutup
+loginOverlay.addEventListener("click", (e) => {
+  if (e.target === loginOverlay) {
+    loginOverlay.classList.remove("show");
+  }
+});
+
   </script>
 
 
