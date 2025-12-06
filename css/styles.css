@@ -263,7 +263,6 @@ button {
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 h2 {
@@ -280,3 +279,5 @@ input {
   border-radius: 6px;
   font-size: 1rem;
 }
+
+
