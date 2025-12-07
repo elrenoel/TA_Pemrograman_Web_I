@@ -5,6 +5,7 @@
 
 .profile-nav img {
     transition: 0.2s;
+
 }
 .profile-nav img:hover{
     opacity: 0.8;
@@ -62,10 +63,17 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .section-title {
     margin-bottom: 30px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .content-layout {
@@ -193,6 +201,29 @@ a {
         width: 100%;
     }
 }
+
+.left-column {
+    /* background-color: greenyellow; */
+    padding: 0.8rem;
+    max-height: 35rem;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.left-column::-webkit-scrollbar {
+    width: 8px;
+}
+
+.left-column::-webkit-scrollbar-thumb {
+    background: #cfcac5;
+    border-radius: 1.4rem;
+}
+
+.left-column::-webkit-scrollbar-thumb:hover {
+    background: url(/images/Mask\ group.png);
+}
+
 @media (max-width: 700px) {
     .news-row {
         flex-direction: column;
