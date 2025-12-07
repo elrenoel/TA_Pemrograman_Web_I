@@ -1,5 +1,6 @@
 .hero {
-  min-height: calc(100vh - 5.6191375rem);
+  /* min-height: calc(100vh - 5.6191375rem); */
+  min-height: calc(100vh - 6.625rem);
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
