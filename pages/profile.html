@@ -6,10 +6,18 @@
     <title>Profile</title>
     <link rel="shortcut icon" href="/images/swavylogo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="shortcut icon" href="../images/swavylogo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <header class="header">
+            <div class="mobile-menu">
+                <a href="home.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="news.html">News</a>
+                <a href="profile.html">Profile</a>
+            </div>
             <div class="logo-area">
                 <a href="../index.html">
                   <img src="../images/swavylogo.png" class="logo-icon">
@@ -17,7 +25,7 @@
                 <span class="logo-text">Swavy</span>
             </div>
             <nav class="menu">
-                <a class="menu-mation" href="/pages/home.html">Home</a>
+                <a class="menu-mation" href="home.html">Home</a>
                 <a class="menu-mation" href="explore.html">Explore</a>
                 <a class="menu-mation" href="news.html">News</a>
             </nav>
@@ -241,6 +249,32 @@
                 bookmarkBtn.src = "../images/bookmark.png"; // icon normal
             }
         });
+
+        const profile = document.querySelector(".profile");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        profile.addEventListener("click", (e) => {
+        if (window.innerWidth <= 900) {
+            e.preventDefault(); 
+            mobileMenu.classList.toggle("show");
+        }
+        });
+
+        document.addEventListener("click", (e) => {
+        const klikProfile = profile.contains(e.target);
+        const klikMenu = mobileMenu.contains(e.target);
+
+        if (!klikProfile && !klikMenu) {
+            mobileMenu.classList.remove("show");
+        }
+        });
+
+        window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+            mobileMenu.classList.remove("show");
+        }
+        });
+
     </script>
 </body>
 </html>

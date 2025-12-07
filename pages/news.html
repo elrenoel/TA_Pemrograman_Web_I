@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/playlist.css">
+    <link rel="stylesheet" href="../css/globals.css">
     <title>Swavy Playlist</title>
     <link rel="shortcut icon" href="../images/swavylogo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <header class="header">
+            <div class="mobile-menu">
+                <a href="home.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="news.html">News</a>
+                <a href="profile.html">Profile</a>
+            </div>
             <div class="logo-area">
                 <img src="../images/swavylogo.png" class="logo-icon">
                 <span class="logo-text">Swavy</span>
@@ -86,6 +93,34 @@
           </div>
         </main>
     </div>
+    <script>
+   
+    const profile = document.querySelector(".profile");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    profile.addEventListener("click", (e) => {
+    if (window.innerWidth <= 900) {
+        e.preventDefault(); 
+        mobileMenu.classList.toggle("show");
+    }
+    });
+
+    document.addEventListener("click", (e) => {
+    const klikProfile = profile.contains(e.target);
+    const klikMenu = mobileMenu.contains(e.target);
+
+    if (!klikProfile && !klikMenu) {
+        mobileMenu.classList.remove("show");
+    }
+    });
+
+    window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+        mobileMenu.classList.remove("show");
+    }
+    });
+
+    </script>
 </body>
 
 </html>

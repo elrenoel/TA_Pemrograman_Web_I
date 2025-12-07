@@ -221,37 +221,7 @@ nav {
   gap: 1rem;
 }
 
-.overlay-log {
-  margin-top: 0.5rem;
-}
 
-.log {
-  margin-bottom: 0.5rem;
-}
-
-.login-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-
-.login-overlay.show {
-  display: flex;
-}
-
-.login-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 350px;
-  z-index: 3;
-  ;
-}
 /* 
 button {
   width: 100%;

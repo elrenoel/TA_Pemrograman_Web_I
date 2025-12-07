@@ -14,6 +14,12 @@
 <body>
     <div class="container">
         <header class="header">
+            <div class="mobile-menu">
+                <a href="home.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="news.html">News</a>
+                <a href="profile.html">Profile</a>
+            </div>
             <div class="logo-area">
                 <a class="swavy-motion" href="../index.html">
                     <img src="../images/swavylogo.png" class="logo-icon">
@@ -213,43 +219,41 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="box-motion">
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    <div class="box-again">
-                        <img class="size-img" src="../images/ALBUM OF THE WEEK _ Beabadoobee - This Is How….jpeg" alt="">
-                    </div>
-                    
-                </div> -->
+                
             </section>
         </main>
         <footer class="footer">
             <div>© 2025 Swavy Corp</div>
         </footer>
     </div>
+    <script>
+   
+    const profile = document.querySelector(".profile");
+    const mobileMenu = document.querySelector(".mobile-menu");
 
+    profile.addEventListener("click", (e) => {
+    if (window.innerWidth <= 900) {
+        e.preventDefault(); 
+        mobileMenu.classList.toggle("show");
+    }
+    });
+
+    document.addEventListener("click", (e) => {
+    const klikProfile = profile.contains(e.target);
+    const klikMenu = mobileMenu.contains(e.target);
+
+    if (!klikProfile && !klikMenu) {
+        mobileMenu.classList.remove("show");
+    }
+    });
+
+    window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+        mobileMenu.classList.remove("show");
+    }
+    });
+
+    </script>
 </body>
 
 </html>
