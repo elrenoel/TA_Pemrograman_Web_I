@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +16,10 @@
     <div class="container">
         <header class="header">
             <div class="mobile-menu">
-                <a href="home.html">Home</a>
-                <a href="explore.html">Explore</a>
-                <a href="news.html">News</a>
-                <a href="profile.html">Profile</a>
+                <a href="home.php">Home</a>
+                <a href="explore.php">Explore</a>
+                <a href="news.php">News</a>
+                <a href="profile.php">Profile</a>
             </div>
             <div class="logo-area">
                 <a href="../index.html">
@@ -25,15 +28,15 @@
                 <span class="logo-text">Swavy</span>
             </div>
             <nav class="menu">
-                <a class="menu-mation" href="home.html">Home</a>
-                <a class="menu-mation" href="explore.html">Explore</a>
-                <a class="menu-mation" href="news.html">News</a>
+                <a class="menu-mation" href="home.php">Home</a>
+                <a class="menu-mation" href="explore.php">Explore</a>
+                <a class="menu-mation" href="news.php">News</a>
             </nav>
             <div class="profile">
                 <a class="profile-nav" href="">
                    <img src="../images/9.jpeg" class="profile-img">
                 </a>
-                <span class="profile-name">javierssvr_</span>
+                <span class="profile-name"><?= $_SESSION['name']; ?></span>
             </div>
         </header>          
     </div>
@@ -75,7 +78,7 @@
                             <div class="popup-box popup-top">Change Image</div>
                         </div>
                         <div>
-                            <h1 class="javier">javierssvr_</h1>
+                            <h1 class="javier"><?= $_SESSION['name']; ?></h1>
                             <p class="hey-text">hey there 📍</p>
                             <div class="follower">
                                 <h1><span class="bold-one">1</span> Follower</h1>

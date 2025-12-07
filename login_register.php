@@ -35,9 +35,9 @@ if (isset($_POST['login'])){
       $_SESSION['email'] = $user['email'];
 
       if($user['role'] === 'admin'){
-        header("Location: pages/home.html");
+        header("Location: pages/home.php");
       }else {
-        header("Location: pages/home.html");
+        header("Location: pages/home.php");
       }
       exit();
     }
