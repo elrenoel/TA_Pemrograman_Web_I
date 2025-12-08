@@ -32,7 +32,7 @@
                 <a class="menu-mation" href="news.php">News</a>
             </nav>
             <div class="profile">
-                <a class="profile-nav" href="">
+                <a class="profile-nav" href="profile.php">
                    <img src="../images/9.jpeg" class="profile-img">
                 </a>
                 <span class="profile-name"><?= $_SESSION['name']; ?></span>

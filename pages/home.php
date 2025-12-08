@@ -36,7 +36,7 @@
             </nav>
 
             <div class="profile">
-                <a class="profile-nav" href="profile.html">
+                <a class="profile-nav" href="profile.php">
                   <img src="../images/9.jpeg" class="profile-img">
                 </a>
                 <span class="profile-name"><?= $_SESSION['name']; ?></span>
